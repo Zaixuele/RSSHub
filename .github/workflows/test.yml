@@ -130,7 +130,7 @@ jobs:
       - name: Upload assets
         uses: actions/upload-artifact@v4
         with:
-          name: generated-assets-${{ matrix.node-version }}
+          name: generated-assets-${{ github.run_id }}
           path: assets/build/
 
   automerge:
