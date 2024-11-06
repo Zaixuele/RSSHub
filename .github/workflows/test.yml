@@ -130,7 +130,7 @@ jobs:
       - name: Upload assets
         uses: actions/upload-artifact@v4
         with:
-          name: generated-assets-${{ github.run_id }}
+          name: generated-assets-${{ github.job }}
           path: assets/build/
 
   automerge:
